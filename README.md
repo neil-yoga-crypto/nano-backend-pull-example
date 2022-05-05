@@ -32,6 +32,7 @@ git clone https://github.com/neil-yoga/nano-backend-pull-example
 npm install
 # replace your walletId in ./index.js
 node index.js
+# (should display latest 60 transactions)
 ```
 
 ### Link to Public Nano Nodes (unofficial)
