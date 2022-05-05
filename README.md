@@ -1,14 +1,9 @@
 # nano-backend-pull-example
 Retrieving your wallet's transaction history from a public Nano RPC node example.
 
-I am using https://github.com/neil-yoga/crud-true-power for the HTTP POST request, but you can of course use any HTTP library of choice, like Axios.
-
-
 ```
-(async function() { // async wrapper start + 
-try {
-    var crud = require('./crud-true-power')();
-    // feel free to replace crud with axios (npm install axios --save)
+(async function() { 
+    const axios = require('axios');
     let platformPublicWallet = 'nano_3t9ofis75mzxb76tq3mjqekwqzp6xgwcyehrmfpp8mbf1fs4paiipdz9guwy';
     let publicNanoNodeApiUrl = 'https://proxy.powernode.cc/proxy';
     let rpcPost = {
@@ -17,17 +12,17 @@ try {
       "count": "60"
     };
 
-    let res = await crud.http.create(publicNanoNodeApiUrl,rpcPost);
-    if(res.error) {
-        console.log("error",String(res.error)); 
-    } else {
+    try {
+        let res = await axios.post(publicNanoNodeApiUrl,rpcPost);
         // save transactions to your database if they do not exist
-        res.history.forEach(async(transaction) => {
+        res.data.history.forEach(async(transaction) => {
             console.log("transaction",transaction); 
         });
+    } catch(err) {
+        console.log("error",String(err)); 
     }
+
     process.exit(0); // close script
-     } catch(err) { console.log(err);process.exit(1);}
 })() // async wrapper end;
 ```
 

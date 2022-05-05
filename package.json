@@ -1,0 +1,22 @@
+{
+  "name": "nano-backend-pull-example",
+  "version": "1.0.0",
+  "description": "Retrieving your wallet's transaction history from a public Nano RPC node example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neil-yoga/nano-backend-pull-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neil-yoga/nano-backend-pull-example/issues"
+  },
+  "homepage": "https://github.com/neil-yoga/nano-backend-pull-example#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
