@@ -29,3 +29,6 @@ try {
      } catch(err) { console.log(err);process.exit(1);}
 })() // async wrapper end;
 ```
+
+### Link to Nano Documentation
+https://docs.nano.org/commands/rpc-protocol/
