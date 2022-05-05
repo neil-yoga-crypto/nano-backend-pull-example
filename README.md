@@ -30,7 +30,7 @@ Retrieving your wallet's transaction history from a public Nano RPC node example
 ```
 git clone https://github.com/neil-yoga/nano-backend-pull-example
 npm install
-# replace platformPublicWallet value with your own public wallet in ./index.js
+# replace platformPublicWallet with your own in ./index.js
 node index.js
 # (should display latest 60 transactions)
 ```
