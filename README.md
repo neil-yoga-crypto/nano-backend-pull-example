@@ -26,6 +26,9 @@ Retrieving your wallet's transaction history from a public Nano RPC node example
 })() // async wrapper end;
 ```
 
+### Link to Public Nano Nodes (unofficial)
+https://publicnodes.somenano.com/
+
 ### Link to Nano Documentation
 https://docs.nano.org/commands/rpc-protocol/
 
